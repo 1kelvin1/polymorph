@@ -13,13 +13,17 @@ license = "MIT"
 keywords = ["security", "malware", "polyglot", "detection", "wasm"]
 categories = ["command-line-utilities", "development-tools"]
 
+# ---------------- Core dependencies ----------------
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 
+# ---------------- Dev / test only ----------------
 [dev-dependencies]
 tempfile = "3.8"
+criterion = "0.5"
 
+# ---------------- Release profile ----------------
 [profile.release]
 opt-level = 3
 lto = true
@@ -27,6 +31,25 @@ codegen-units = 1
 strip = true
 panic = "abort"
 
+# ---------------- Binary ----------------
 [[bin]]
 name = "polymorph"
 path = "src/main.rs"
+
+# ---------------- Benchmarks ----------------
+[[bench]]
+name = "benchmark"
+harness = false
+
+# ---------------- Examples ----------------
+[[example]]
+name = "basic_scan"
+path = "examples/basic_scan.rs"
+
+[[example]]
+name = "batch_scan"
+path = "examples/batch_scan.rs"
+
+[[example]]
+name = "json_output"
+path = "examples/json_output.rs"
