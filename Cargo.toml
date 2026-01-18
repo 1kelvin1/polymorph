@@ -1,0 +1,43 @@
+[package]
+name = "polymorph"
+version = "1.1.0"
+authors = ["xonoxitron <https://github.com/xonoxitron>"]
+edition = "2021"
+rust-version = "1.70"
+description = "Open-source detector for APE, Zig, and WASM polyglot malware"
+documentation = "https://github.com/xonoxitron/polymorph"
+readme = "README.md"
+homepage = "https://github.com/xonoxitron/polymorph"
+repository = "https://github.com/xonoxitron/polymorph"
+license = "MIT"
+keywords = ["security", "malware", "polyglot", "detection", "wasm"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+
+[dev-dependencies]
+tempfile = "3.8"
+criterion = "0.5"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[[bin]]
+name = "polymorph"
+path = "src/main.rs"
+
+[[bench]]
+name = "scan_benchmark"
+harness = false
+
+[[example]]
+name = "basic_scan"
+path = "examples/basic_scan.rs"
+
+[[example]]
+name = "batch_scan"
+path = "examples/batch_scan.rs"
